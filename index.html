@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café Colombiano</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/galeria.css">
+  <link rel="stylesheet" href="css/admin.css">
+  <link rel="stylesheet" href="css/chatbot.css">
+  <link rel="stylesheet" href="css/derivados.css">
+</head>
+<body>
+
+<!-- ─── NAV ─── -->
+<nav id="navbar">
+  <a href="#" class="nav-logo">☕ Café Colombiano</a>
+  <ul class="nav-links">
+    <li><a href="#variedades">Variedades</a></li>
+    <li><a href="#regiones">Regiones</a></li>
+    <li><a href="#productores">Productores</a></li>
+    <li><a href="#derivados">Bebidas</a></li>
+    <li><a href="#derivados-clase">Clase Derivados</a></li>
+    <li><a href="#modelo">Modelo</a></li>
+  </ul>
+</nav>
+
+<!-- ─── HERO ─── -->
+<section class="hero">
+  <p class="hero-label">República de Colombia · Tierra de Café Especial</p>
+  <h1 class="hero-title">El Café<br><em>Más Suave</em><br>del Mundo</h1>
+  <p class="hero-sub">Desde las montañas andinas hasta tu taza — una historia de tradición, altitud y sabor incomparable.</p>
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    Descubre
+  </div>
+</section>
+
+<!-- ─── STATS ─── -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat-item fade-in">
+      <div class="stat-num">3°</div>
+      <div class="stat-desc">productor mundial</div>
+    </div>
+    <div class="stat-item fade-in">
+      <div class="stat-num">5</div>
+      <div class="stat-desc">regiones cafeteras</div>
+    </div>
+    <div class="stat-item fade-in">
+      <div class="stat-num">100%</div>
+      <div class="stat-desc">grano arábica</div>
+    </div>
+    <div class="stat-item fade-in">
+      <div class="stat-num">500k</div>
+      <div class="stat-desc">familias caficultoras</div>
+    </div>
+  </div>
+</div>
+
+<!-- ─── VARIEDADES ─── -->
+<section class="variedades-section" id="variedades">
+  <div class="container">
+    <div class="variedades-header">
+      <div>
+        <span class="section-tag">Granos</span>
+        <h2 class="section-title">Variedades<br>de Café</h2>
+      </div>
+      <p class="section-lead">Cada variedad nace en su propio microclima, produciendo perfiles de sabor únicos que reflejan el terroir colombiano.</p>
+    </div>
+
+    <div class="variedades-grid">
+
+      <!-- Caturra -->
+      <div class="variedad-card fade-in" data-name="Caturra" data-desc="Mutación del Bourbon, muy productiva y de alta calidad. Ideal para altitudes medias en la región andina." data-tipo="Arábica" data-altitud="1.200 msnm" data-region="Antioquia" data-proceso="Lavado" data-sabores="Caramelo,Chocolate,Cítricos" data-image="assest/Tipos_Cafe/Caturra.jpeg">
+        <div class="variedad-banner banner-caturra">
+          <img src="assest/Tipos_Cafe/Caturra.jpeg" alt="Variedad Caturra" class="variedad-imagen">
+          <span class="variedad-nombre">Caturra</span>
+        </div>
+        <div class="variedad-body">
+          <p class="variedad-desc">Mutación del Bourbon, muy productiva y de alta calidad. Ideal para altitudes medias en la región andina.</p>
+          <div class="variedad-meta">
+            <div class="meta-item"><span class="meta-label">Altitud</span><span class="meta-value">1.200 msnm</span></div>
+            <div class="meta-item"><span class="meta-label">Tipo</span><span class="meta-value">Arábica</span></div>
+            <div class="meta-item"><span class="meta-label">Proceso</span><span class="meta-value">Lavado</span></div>
+            <div class="meta-item"><span class="meta-label">Región</span><span class="meta-value">Antioquia</span></div>
+          </div>
+          <div class="sabores">
+            <span class="sabor-pill">Caramelo</span>
+            <span class="sabor-pill">Chocolate</span>
+            <span class="sabor-pill">Cítricos</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Castillo -->
+      <div class="variedad-card fade-in" data-name="Castillo" data-desc="Variedad resistente a la roya, desarrollada en Colombia por Cenicafé. Equilibrio perfecto entre rendimiento y calidad." data-tipo="Arábica" data-altitud="1.400 msnm" data-region="Huila" data-proceso="Lavado" data-sabores="Dulce,Balanceado,Notas Florales" data-image="assest/Tipos_Cafe/Castillo.jpeg">
+        <div class="variedad-banner banner-castillo">
+          <img src="assest/Tipos_Cafe/Castillo.jpeg" alt="Variedad Castillo" class="variedad-imagen">
+          <span class="variedad-nombre">Castillo</span>
+        </div>
+        <div class="variedad-body">
+          <p class="variedad-desc">Variedad resistente a la roya, desarrollada en Colombia por Cenicafé. Equilibrio perfecto entre rendimiento y calidad.</p>
+          <div class="variedad-meta">
+            <div class="meta-item"><span class="meta-label">Altitud</span><span class="meta-value">1.400 msnm</span></div>
+            <div class="meta-item"><span class="meta-label">Tipo</span><span class="meta-value">Arábica</span></div>
+            <div class="meta-item"><span class="meta-label">Proceso</span><span class="meta-value">Lavado</span></div>
+            <div class="meta-item"><span class="meta-label">Región</span><span class="meta-value">Huila</span></div>
+          </div>
+          <div class="sabores">
+            <span class="sabor-pill">Dulce</span>
+            <span class="sabor-pill">Balanceado</span>
+            <span class="sabor-pill">Notas Florales</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Típica -->
+      <div class="variedad-card fade-in" data-name="Típica" data-desc="Variedad tradicional de excelente taza. La primera en cultivarse en Colombia, trae consigo siglos de historia cafetera." data-tipo="Arábica" data-altitud="1.800 msnm" data-region="Nariño" data-proceso="Natural" data-sabores="Dulce,Limpio,Acidez Brillante" data-image="assest/Tipos_Cafe/Tipica.jpeg">
+        <div class="variedad-banner banner-tipica">
+          <img src="assest/Tipos_Cafe/Tipica.jpeg" alt="Variedad Típica" class="variedad-imagen">
+          <span class="variedad-nombre">Típica</span>
+        </div>
+        <div class="variedad-body">
+          <p class="variedad-desc">Variedad tradicional de excelente taza. La primera en cultivarse en Colombia, trae consigo siglos de historia cafetera.</p>
+          <div class="variedad-meta">
+            <div class="meta-item"><span class="meta-label">Altitud</span><span class="meta-value">1.800 msnm</span></div>
+            <div class="meta-item"><span class="meta-label">Tipo</span><span class="meta-value">Arábica</span></div>
+            <div class="meta-item"><span class="meta-label">Proceso</span><span class="meta-value">Natural</span></div>
+            <div class="meta-item"><span class="meta-label">Región</span><span class="meta-value">Nariño</span></div>
+          </div>
+          <div class="sabores">
+            <span class="sabor-pill">Dulce</span>
+            <span class="sabor-pill">Limpio</span>
+            <span class="sabor-pill">Acidez Brillante</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bourbon -->
+      <div class="variedad-card fade-in" data-name="Bourbon" data-desc="Variedad clásica de alta calidad con cuerpo prominente y notas oscuras. Reconocida mundialmente por baristas especializados." data-tipo="Arábica" data-altitud="1.600 msnm" data-region="Tolima" data-proceso="Honey" data-sabores="Chocolate Oscuro,Frutas Rojas,Cremoso" data-image="assest/Tipos_Cafe/Bourbon.jpeg">
+        <div class="variedad-banner banner-bourbon">
+          <img src="assest/Tipos_Cafe/Bourbon.jpeg" alt="Variedad Bourbon" class="variedad-imagen">
+          <span class="variedad-nombre">Bourbon</span>
+        </div>
+        <div class="variedad-body">
+          <p class="variedad-desc">Variedad clásica de alta calidad con cuerpo prominente y notas oscuras. Reconocida mundialmente por baristas especializados.</p>
+          <div class="variedad-meta">
+            <div class="meta-item"><span class="meta-label">Altitud</span><span class="meta-value">1.600 msnm</span></div>
+            <div class="meta-item"><span class="meta-label">Tipo</span><span class="meta-value">Arábica</span></div>
+            <div class="meta-item"><span class="meta-label">Proceso</span><span class="meta-value">Honey</span></div>
+            <div class="meta-item"><span class="meta-label">Región</span><span class="meta-value">Tolima</span></div>
+          </div>
+          <div class="sabores">
+            <span class="sabor-pill">Chocolate Oscuro</span>
+            <span class="sabor-pill">Frutas Rojas</span>
+            <span class="sabor-pill">Cremoso</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Geisha -->
+      <div class="variedad-card fade-in" data-name="Geisha" data-desc="La joya de las variedades especiales. Cultivada en las alturas del Eje Cafetero, produce una taza de sabor extraordinario." data-tipo="Arábica" data-altitud="2.000 msnm" data-region="Caldas" data-proceso="Lavado" data-sabores="Jazmín,Bergamota,Mango" data-image="assest/Tipos_Cafe/Geisha.jpeg">
+        <div class="variedad-banner banner-geisha">
+          <img src="assest/Tipos_Cafe/Geisha.jpeg" alt="Variedad Geisha" class="variedad-imagen">
+          <span class="variedad-nombre">Geisha</span>
+        </div>
+        <div class="variedad-body">
+          <p class="variedad-desc">La joya de las variedades especiales. Cultivada en las alturas del Eje Cafetero, produce una taza de sabor extraordinario.</p>
+          <div class="variedad-meta">
+            <div class="meta-item"><span class="meta-label">Altitud</span><span class="meta-value">2.000 msnm</span></div>
+            <div class="meta-item"><span class="meta-label">Tipo</span><span class="meta-value">Arábica</span></div>
+            <div class="meta-item"><span class="meta-label">Proceso</span><span class="meta-value">Lavado</span></div>
+            <div class="meta-item"><span class="meta-label">Región</span><span class="meta-value">Caldas</span></div>
+          </div>
+          <div class="sabores">
+            <span class="sabor-pill">Jazmín</span>
+            <span class="sabor-pill">Bergamota</span>
+            <span class="sabor-pill">Mango</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── REGIONES ─── -->
+<section class="regiones-section" id="regiones">
+  <div class="container">
+    <span class="section-tag">Territorio</span>
+    <h2 class="section-title">Regiones Cafeteras</h2>
+    <p class="section-lead">Las montañas colombianas ofrecen las condiciones perfectas: clima, altitud y suelos volcánicos únicos en el mundo.</p>
+
+    <div class="regiones-grid">
+
+      <div class="region-card fade-in">
+        <div class="region-banner">
+          <img src="assest/Regiones/Huila.jpeg" alt="Región Huila" class="region-imagen">
+          <div class="region-numero">01</div>
+          <h3 class="region-nombre">Huila</h3>
+        </div>
+        <p class="region-desc">Región montañosa del sur, cuna de cafés de concurso con alta acidez y dulzura notable.</p>
+        <div class="region-stat">⬆ Altitud media: <strong>&nbsp;1.750 msnm</strong></div>
+        <div class="region-stat" style="margin-top:0.25rem">☁ <strong>&nbsp;Tropical de altura</strong></div>
+      </div>
+
+      <div class="region-card fade-in">
+        <div class="region-banner">
+          <img src="assest/Regiones/Antioquia.jpeg" alt="Región Antioquia" class="region-imagen">
+          <div class="region-numero">02</div>
+          <h3 class="region-nombre">Antioquia</h3>
+        </div>
+        <p class="region-desc">Cuna de la cultura cafetera colombiana, con tradición centenaria y gran biodiversidad.</p>
+        <div class="region-stat">⬆ Altitud media: <strong>&nbsp;1.650 msnm</strong></div>
+        <div class="region-stat" style="margin-top:0.25rem">☁ <strong>&nbsp;Tropical húmedo</strong></div>
+      </div>
+
+      <div class="region-card fade-in">
+        <div class="region-banner">
+          <img src="assest/Regiones/Nariño.jpeg" alt="Región Nariño" class="region-imagen">
+          <div class="region-numero">03</div>
+          <h3 class="region-nombre">Nariño</h3>
+        </div>
+        <p class="region-desc">Fronteriza con Ecuador, produce cafés de alta acidez cítrica cultivados cerca de los 2.100 metros.</p>
+        <div class="region-stat">⬆ Altitud media: <strong>&nbsp;2.100 msnm</strong></div>
+        <div class="region-stat" style="margin-top:0.25rem">☁ <strong>&nbsp;Frío de montaña</strong></div>
+      </div>
+
+      <div class="region-card fade-in">
+        <div class="region-banner">
+          <img src="assest/Regiones/Tolima.jpeg" alt="Región Tolima" class="region-imagen">
+          <div class="region-numero">04</div>
+          <h3 class="region-nombre">Tolima</h3>
+        </div>
+        <p class="region-desc">Zona central con gran diversidad de microclimas que permite cultivar varios perfiles de sabor.</p>
+        <div class="region-stat">⬆ Altitud media: <strong>&nbsp;1.700 msnm</strong></div>
+        <div class="region-stat" style="margin-top:0.25rem">☁ <strong>&nbsp;Tropical de montaña</strong></div>
+      </div>
+
+      <div class="region-card fade-in">
+        <div class="region-banner">
+          <img src="assest/Regiones/Caldas.jpeg" alt="Región Caldas" class="region-imagen">
+          <div class="region-numero">05</div>
+          <h3 class="region-nombre">Caldas</h3>
+        </div>
+        <p class="region-desc">Corazón del Eje Cafetero y Paisaje Cultural declarado Patrimonio de la Humanidad por la UNESCO.</p>
+        <div class="region-stat">⬆ Altitud media: <strong>&nbsp;1.600 msnm</strong></div>
+        <div class="region-stat" style="margin-top:0.25rem">☁ <strong>&nbsp;Subtropical húmedo</strong></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── PRODUCTORES ─── -->
+<section class="productores-section" id="productores">
+  <div class="container">
+    <span class="section-tag">Comunidad</span>
+    <h2 class="section-title">Productores<br>Certificados</h2>
+    <p class="section-lead">Familias y cooperativas que cultivan con responsabilidad social, ambiental y económica.</p>
+
+    <div class="productores-list">
+
+      <div class="productor-card fade-in">
+        <div class="productor-icono">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/>
+          </svg>
+        </div>
+        <h3 class="productor-nombre">Cooperativa Caficultores del Huila</h3>
+        <p class="tag-label">Certificaciones</p>
+        <div class="tags">
+          <span class="tag tag-cert">Comercio Justo</span>
+          <span class="tag tag-cert">Orgánico</span>
+          <span class="tag tag-cert">Rainforest Alliance</span>
+        </div>
+        <p class="tag-label">Métodos de cultivo</p>
+        <div class="tags">
+          <span class="tag tag-metodo">Sostenible</span>
+          <span class="tag tag-metodo">Agroforestal</span>
+        </div>
+      </div>
+
+      <div class="productor-card fade-in">
+        <div class="productor-icono">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"/>
+          </svg>
+        </div>
+        <h3 class="productor-nombre">Finca La Esperanza</h3>
+        <p class="tag-label">Certificaciones</p>
+        <div class="tags">
+          <span class="tag tag-cert">UTZ</span>
+          <span class="tag tag-cert">Orgánico</span>
+        </div>
+        <p class="tag-label">Métodos de cultivo</p>
+        <div class="tags">
+          <span class="tag tag-metodo">Sostenible</span>
+          <span class="tag tag-metodo">Sombra</span>
+        </div>
+      </div>
+
+      <div class="productor-card fade-in">
+        <div class="productor-icono">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
+          </svg>
+        </div>
+        <h3 class="productor-nombre">Asociación de Productores de Nariño</h3>
+        <p class="tag-label">Certificaciones</p>
+        <div class="tags">
+          <span class="tag tag-cert">Comercio Justo</span>
+          <span class="tag tag-cert">4C</span>
+        </div>
+        <p class="tag-label">Métodos de cultivo</p>
+        <div class="tags">
+          <span class="tag tag-metodo">Tradicional</span>
+          <span class="tag tag-metodo">Orgánico</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── DERIVADOS 
+<section class="derivados-section" id="derivados">
+  <div class="container">
+    <span class="section-tag">Bebidas</span>
+    <h2 class="section-title">Del Grano<br>a la Taza</h2>
+    <p class="section-lead">Las preparaciones que forman parte de la cultura cotidiana colombiana, desde el campo hasta la ciudad.</p>
+
+    <div class="derivados-grid">
+
+      <div class="derivado-card fade-in">
+        <h3 class="derivado-nombre">Tinto</h3>
+        <p class="derivado-desc">Café negro tradicional colombiano. Simple, fuerte y presente en cada rincón del país desde el amanecer.</p>
+        <div class="derivado-detalles">
+          <span>☕ <strong>Preparación:</strong> Filtrado en tela</span>
+          <span>📍 <strong>Región:</strong> Todo el país</span>
+          <span>🌱 <strong>Base:</strong> Caturra</span>
+        </div>
+      </div>
+
+      <div class="derivado-card fade-in">
+        <h3 class="derivado-nombre">Café con Leche</h3>
+        <p class="derivado-desc">La combinación perfecta de café concentrado con leche caliente. El desayuno colombiano por excelencia.</p>
+        <div class="derivado-detalles">
+          <span>☕ <strong>Preparación:</strong> Espresso con leche</span>
+          <span>📍 <strong>Región:</strong> Región Andina</span>
+          <span>🌱 <strong>Base:</strong> Castillo</span>
+        </div>
+      </div>
+
+      <div class="derivado-card fade-in">
+        <h3 class="derivado-nombre">Perico</h3>
+        <p class="derivado-desc">Café suave con toque de leche, típico de las zonas rurales. Acompañante inseparable del campesino colombiano.</p>
+        <div class="derivado-detalles">
+          <span>☕ <strong>Preparación:</strong> Diluido con agua caliente</span>
+          <span>📍 <strong>Región:</strong> Zonas rurales</span>
+          <span>🌱 <strong>Base:</strong> Caturra</span>
+        </div>
+      </div>
+
+      <div class="derivado-card fade-in">
+        <h3 class="derivado-nombre">Espresso Colombiano</h3>
+        <p class="derivado-desc">Concentrado y aromático, elaborado con Geisha para crear un shot de intensidad y complejidad únicas.</p>
+        <div class="derivado-detalles">
+          <span>☕ <strong>Preparación:</strong> Máquina espresso</span>
+          <span>📍 <strong>Región:</strong> Ciudades principales</span>
+          <span>🌱 <strong>Base:</strong> Geisha</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+─── -->
+<!-- ─── CLASE DERIVADOS ─── -->
+<section class="derivados-clase-section" id="derivados-clase">
+  <div class="container">
+    <span class="section-tag">Clase Derivados · Relaciones</span>
+    <h2 class="section-title">Del Grano<br>a la Bebida</h2>
+    <p class="section-lead">
+      La clase <code style="background:var(--crema);padding:0.1rem 0.4rem;border-radius:4px;font-size:0.9em;color:var(--cafe);">Derivado</code>
+      relaciona cada bebida con su <strong>variedad base</strong> y la <strong>región donde se consume</strong>,
+      heredando el perfil de sabor y la trazabilidad completa del grano.
+    </p>
+
+    <!-- Tabs: cards / tabla -->
+    <div class="der-tabs">
+      <button class="der-tab active" data-panel="panel-cards">🃏 Tarjetas</button>
+      <button class="der-tab"        data-panel="panel-tabla">📊 Tabla de relaciones</button>
+    </div>
+
+    <!-- Panel: tarjetas generadas por JS -->
+    <div id="panel-cards" class="der-panel active">
+      <div id="derivados-clase-grid" class="derivados-clase-grid"></div>
+    </div>
+
+    <!-- Panel: tabla de relaciones generada por JS -->
+    <div id="panel-tabla" class="der-panel">
+      <div id="tabla-relaciones-container"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── MODELO CONCEPTUAL ─── -->
+<section class="modelo-section" id="modelo">
+  <div class="container">
+    <span class="section-tag">Ontología · Modelo Conceptual</span>
+    <h2 class="section-title">Jerarquía<br>&amp; Relaciones</h2>
+    <p class="section-lead">Clases, propiedades clave y relaciones entre las entidades del dominio cafetero colombiano.</p>
+
+    <div class="modelo-grid">
+
+      <div class="modelo-card fade-in">
+        <div class="modelo-card-icon">🌍</div>
+        <h4 class="modelo-card-title">Region</h4>
+        <ul>
+          <li>• nombre / departamento</li>
+          <li>• altitudMedia (msnm)</li>
+          <li>• clima / suelo</li>
+          <li>• <em>categoriaAltitud</em> (calculada)</li>
+        </ul>
+      </div>
+
+      <div class="modelo-card fade-in">
+        <div class="modelo-card-icon">☕</div>
+        <h4 class="modelo-card-title">Variedad</h4>
+        <ul>
+          <li>• tipoGrano / metodoProcesamiento</li>
+          <li>• altitudCultivo (msnm)</li>
+          <li>• perfilSabor[ ]</li>
+          <li>• notasCata[ ]</li>
+          <li>• <em>taxonomia</em> (calculada)</li>
+          <li class="relacion">→ Region (origen)</li>
+        </ul>
+      </div>
+
+      <div class="modelo-card fade-in">
+        <div class="modelo-card-icon">👨‍🌾</div>
+        <h4 class="modelo-card-title">Productor</h4>
+        <ul>
+          <li>• certificaciones[ ]</li>
+          <li>• metodosCultivo[ ]</li>
+          <li>• anioFundacion</li>
+          <li>• <em>esCertificado / esSostenible</em></li>
+          <li class="relacion">→ Region[ ] (cultiva en)</li>
+        </ul>
+      </div>
+
+      <div class="modelo-card destacada fade-in">
+        <div class="modelo-card-icon">🥤</div>
+        <h4 class="modelo-card-title">Derivado ⭐</h4>
+        <ul>
+          <li>• preparacion / temperatura</li>
+          <li>• intensidad / popularidad (1–5)</li>
+          <li>• <em>cadena</em> — trazabilidad completa</li>
+          <li>• <em>perfilSaboresHeredados</em></li>
+          <li class="relacion">→ Variedad (base)</li>
+          <li class="relacion">→ Region (consumo)</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Enumeraciones / taxonomías -->
+    <div class="enum-grid">
+      <div class="enum-item"><strong>TipoGrano</strong>Arábica · Robusta · Libérica</div>
+      <div class="enum-item"><strong>MetodoProcesamiento</strong>Lavado · Natural · Honey · Anaeróbico</div>
+      <div class="enum-item"><strong>Certificacion</strong>Comercio Justo · Orgánico · Rainforest · UTZ · 4C · Bird Friendly</div>
+      <div class="enum-item"><strong>MetodoCultivo</strong>Sostenible · Agroforestal · Sombra · Tradicional · Orgánico</div>
+    </div>
+  </div>
+</section>
+
+<div class="modal-overlay" id="variedad-modal" aria-hidden="true">
+  <div class="modal-window" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <button class="modal-close" id="modal-close" aria-label="Cerrar">×</button>
+    <div class="modal-header">
+      <h2 id="modal-title">Variedad</h2>
+      <p id="modal-description">Descripción breve de la variedad.</p>
+    </div>
+    <div class="modal-grid">
+      <div class="modal-card">
+        <p class="modal-label">Tipo de Grano</p>
+        <p class="modal-value" id="modal-tipo">Arábica</p>
+      </div>
+      <div class="modal-card">
+        <p class="modal-label">Altitud de Cultivo</p>
+        <p class="modal-value" id="modal-altitud">1.200 msnm</p>
+      </div>
+      <div class="modal-card">
+        <p class="modal-label">Región</p>
+        <p class="modal-value" id="modal-region">Antioquia</p>
+      </div>
+      <div class="modal-card">
+        <p class="modal-label">Procesamiento</p>
+        <p class="modal-value" id="modal-proceso">Lavado</p>
+      </div>
+    </div>
+    <div class="modal-flavors" id="modal-sabores"></div>
+  </div>
+</div>
+
+<!-- ─── FOOTER ─── -->
+<footer>
+  <p>Hecho con ❤️ para los caficultores de Colombia · <strong>Café Colombiano</strong> · Sistema de Gestión Cooperativa</p>
+</footer>
+
+<script src="js/modelo.js"></script>
+<script>
+// ── Render de la sección "Clase Derivados" ──────────────────
+(function () {
+  const intensidadColor = { Suave:'#a0522d', Media:'#6b3218', Fuerte:'#3b1a08', 'Muy fuerte':'#1a0800' };
+  const intensidadPct   = { Suave:25, Media:50, Fuerte:75, 'Muy fuerte':100 };
+
+  function renderClaseDerivados() {
+    const grid = document.getElementById('derivados-clase-grid');
+    if (!grid) return;
+    const { DERIVADOS } = window.CafeColombia;
+
+    grid.innerHTML = DERIVADOS.map(d => `
+      <div class="derivado-clase-card fade-in">
+        <div class="derivado-clase-body">
+          <div class="derivado-clase-header">
+            <h3 class="derivado-clase-nombre">${d.nombre}</h3>
+            <span class="derivado-clase-estrellas" title="Popularidad ${d.popularidad}/5">${d.estrellas}</span>
+          </div>
+          <span class="temp-badge">${d.temperatura === 'Frío' ? '🧊 Frío' : '🔥 Caliente'}</span>
+          <p class="derivado-clase-desc">${d.descripcion}</p>
+
+          <div class="derivado-relaciones">
+            <div class="relacion-item">
+              <span class="relacion-label">☕ Variedad base</span>
+              <span class="relacion-valor">${d.variedad.nombre}</span>
+            </div>
+            <div class="relacion-item">
+              <span class="relacion-label">🌄 Origen del café</span>
+              <span class="relacion-valor">${d.variedad.regionNombre}</span>
+            </div>
+            <div class="relacion-item">
+              <span class="relacion-label">📍 Región de consumo</span>
+              <span class="relacion-valor">${d.regionConsumo.nombre}</span>
+            </div>
+            <div class="relacion-item">
+              <span class="relacion-label">⚗️ Preparación</span>
+              <span class="relacion-valor">${d.preparacion}</span>
+            </div>
+          </div>
+
+          <div class="sabores-heredados">
+            <span class="sabores-heredados-label">Sabores:</span>
+            ${d.perfilSaboresHeredados.map(s => `<span class="sabor-pill-xs">${s}</span>`).join('')}
+          </div>
+
+          <div class="cadena-trazabilidad">
+            <span class="cadena-label">🔗 Trazabilidad</span>
+            <span class="cadena-texto">${d.cadena}</span>
+          </div>
+
+          <div class="intensidad-bar">
+            <span class="intensidad-label">Intensidad: ${d.intensidad}</span>
+            <div class="intensidad-track">
+              <div class="intensidad-fill"
+                style="width:${intensidadPct[d.intensidad] || 50}%;background:${intensidadColor[d.intensidad] || '#6b3218'}">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    `).join('');
+  }
+
+  function renderTablaRelaciones() {
+    const cont = document.getElementById('tabla-relaciones-container');
+    if (!cont) return;
+    const { DERIVADOS } = window.CafeColombia;
+
+    const filas = DERIVADOS.map(d => `
+      <tr>
+        <td><strong>${d.nombre}</strong></td>
+        <td>${d.variedad.nombre}</td>
+        <td>${d.variedad.regionNombre}</td>
+        <td><span class="proceso-badge">${d.variedad.metodoProcesamiento}</span></td>
+        <td>${d.regionConsumo.nombre}</td>
+        <td><span class="int-badge" style="background:${intensidadColor[d.intensidad]}">${d.intensidad}</span></td>
+        <td>${d.estrellas}</td>
+      </tr>
+    `).join('');
+
+    cont.innerHTML = `
+      <div class="tabla-relaciones-wrap">
+        <table class="tabla-relaciones">
+          <thead>
+            <tr>
+              <th>Bebida (Derivado)</th>
+              <th>Variedad Base</th>
+              <th>Región Origen</th>
+              <th>Proceso</th>
+              <th>Región Consumo</th>
+              <th>Intensidad</th>
+              <th>Popularidad</th>
+            </tr>
+          </thead>
+          <tbody>${filas}</tbody>
+        </table>
+      </div>`;
+  }
+
+  function initTabs() {
+    document.querySelectorAll('.der-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.der-tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.der-panel').forEach(p => p.classList.remove('active'));
+        tab.classList.add('active');
+        const panel = document.getElementById(tab.dataset.panel);
+        if (panel) panel.classList.add('active');
+      });
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    renderClaseDerivados();
+    renderTablaRelaciones();
+    initTabs();
+    // Re-observar los nuevos fade-in generados dinámicamente
+    setTimeout(() => {
+      const obs = new IntersectionObserver((entries) => {
+        entries.forEach((e, i) => {
+          if (e.isIntersecting) {
+            setTimeout(() => e.target.classList.add('visible'), i * 80);
+            obs.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.08 });
+      document.querySelectorAll('#derivados-clase-grid .fade-in, .modelo-section .fade-in')
+              .forEach(el => obs.observe(el));
+    }, 200);
+  });
+})();
+</script>
+<script src="js/app.js"></script>
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="Café Colombiano"
+  agent-id="c60cdb7f-9070-4ffc-a7ea-c4b67d724856"
+  language-code="es"
+></df-messenger>
+
+
+</body>
+</html>

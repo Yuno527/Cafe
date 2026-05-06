@@ -1,0 +1,275 @@
+/* ============================================================
+   DERIVADOS.CSS — Estilos para la clase Derivado,
+   la tabla de relaciones y el modelo conceptual
+   ============================================================ */
+
+/* ─── SECCIÓN DERIVADOS (CLASE) ─── */
+.derivados-clase-section { background: var(--blanco); }
+.derivados-clase-section .section-tag { color: var(--cafe-light); }
+
+/* Tabs */
+.der-tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.der-tab {
+  padding: 0.5rem 1.25rem;
+  border: 2px solid var(--crema-dark);
+  border-radius: 999px;
+  background: white;
+  color: var(--cafe-mid);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s;
+  font-family: 'Source Sans 3', sans-serif;
+}
+.der-tab:hover   { border-color: var(--cafe-light); color: var(--cafe); }
+.der-tab.active  { background: var(--cafe); color: var(--crema); border-color: var(--cafe); }
+
+.der-panel         { display: none; }
+.der-panel.active  { display: block; }
+
+/* Grid de tarjetas derivado */
+.derivados-clase-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.derivado-clase-card {
+  border-radius: 14px;
+  border: 1px solid var(--crema-dark);
+  background: white;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+}
+
+.derivado-clase-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--cafe-light), var(--cafe));
+}
+
+.derivado-clase-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(59,26,8,0.12);
+}
+
+.derivado-clase-body { padding: 1.4rem 1.4rem 1.2rem; }
+
+.derivado-clase-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.derivado-clase-nombre {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  color: var(--cafe);
+}
+
+.derivado-clase-estrellas {
+  color: #d97706;
+  font-size: 0.85rem;
+  letter-spacing: -1px;
+}
+
+.derivado-clase-desc {
+  font-size: 0.84rem;
+  color: var(--texto-mid);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Relaciones clave — el corazón de la clase Derivado */
+.derivado-relaciones {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  padding: 0.85rem;
+  background: var(--crema);
+  border-radius: 10px;
+  margin-bottom: 0.85rem;
+}
+
+.relacion-item   { display: flex; flex-direction: column; gap: 0.1rem; }
+.relacion-label  { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.05em; color: #999; }
+.relacion-valor  { font-size: 0.82rem; font-weight: 600; color: var(--cafe); }
+
+/* Sabores heredados */
+.sabores-heredados {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+  margin-bottom: 0.75rem;
+}
+.sabores-heredados-label { font-size: 0.7rem; color: #aaa; white-space: nowrap; }
+
+.sabor-pill-xs {
+  background: var(--crema);
+  color: var(--cafe-mid);
+  border-radius: 999px;
+  padding: 0.15rem 0.5rem;
+  font-size: 0.68rem;
+  font-weight: 600;
+}
+
+/* Trazabilidad */
+.cadena-trazabilidad {
+  padding: 0.5rem 0.75rem;
+  border-left: 3px solid var(--cafe-light);
+  background: rgba(160,82,45,0.05);
+  border-radius: 0 6px 6px 0;
+  margin-bottom: 0.75rem;
+}
+.cadena-label { font-size: 0.63rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--cafe-light); font-weight: 700; display: block; margin-bottom: 0.2rem; }
+.cadena-texto { font-size: 0.72rem; color: var(--texto-mid); line-height: 1.5; }
+
+/* Barra de intensidad */
+.intensidad-bar   { margin-top: 0.25rem; }
+.intensidad-label { font-size: 0.7rem; color: #aaa; display: block; margin-bottom: 0.3rem; }
+.intensidad-track { height: 5px; background: var(--crema); border-radius: 999px; overflow: hidden; }
+.intensidad-fill  { height: 100%; border-radius: 999px; transition: width 1.2s ease; }
+
+/* Badge temperatura */
+.temp-badge {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  background: var(--crema);
+  color: var(--cafe-mid);
+}
+
+/* ─── TABLA DE RELACIONES ─── */
+.tabla-relaciones-wrap {
+  overflow-x: auto;
+  border-radius: 12px;
+  border: 1px solid var(--crema-dark);
+  margin-top: 0.5rem;
+}
+
+.tabla-relaciones {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  min-width: 680px;
+  background: white;
+}
+
+.tabla-relaciones thead { background: var(--cafe); }
+
+.tabla-relaciones th {
+  padding: 0.85rem 1rem;
+  text-align: left;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--crema-dark);
+  font-weight: 600;
+}
+
+.tabla-relaciones td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--crema);
+  color: var(--texto);
+  vertical-align: middle;
+}
+
+.tabla-relaciones tr:last-child td { border-bottom: none; }
+.tabla-relaciones tr:hover td { background: var(--crema); }
+.tabla-relaciones td strong { color: var(--cafe); }
+
+.proceso-badge {
+  display: inline-block;
+  padding: 0.18rem 0.55rem;
+  background: var(--crema);
+  border: 1px solid var(--crema-dark);
+  border-radius: 999px;
+  font-size: 0.7rem;
+  color: var(--cafe-mid);
+  font-weight: 600;
+}
+
+.int-badge {
+  display: inline-block;
+  padding: 0.18rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  color: white;
+  font-weight: 600;
+}
+
+/* ─── SECCIÓN MODELO CONCEPTUAL ─── */
+.modelo-section {
+  background: var(--cafe);
+  color: var(--crema);
+}
+.modelo-section .section-tag   { color: var(--crema-dark); }
+.modelo-section .section-title { color: var(--crema); }
+.modelo-section .section-lead  { color: var(--crema-dark); }
+
+.modelo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.modelo-card {
+  border: 1px solid rgba(245,230,200,0.2);
+  border-radius: 10px;
+  padding: 1.4rem;
+  transition: background 0.3s, border-color 0.3s;
+}
+.modelo-card:hover {
+  background: rgba(245,230,200,0.07);
+  border-color: rgba(245,230,200,0.35);
+}
+.modelo-card.destacada {
+  border: 2px solid rgba(245,230,200,0.5);
+  background: rgba(245,230,200,0.07);
+}
+
+.modelo-card-icon  { font-size: 1.8rem; margin-bottom: 0.6rem; }
+.modelo-card-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  color: var(--crema);
+  margin-bottom: 0.6rem;
+}
+
+.modelo-card ul {
+  list-style: none;
+  font-size: 0.78rem;
+  color: var(--crema-dark);
+  line-height: 1.9;
+}
+.modelo-card ul li.relacion { color: var(--crema); font-weight: 600; }
+
+/* Enumeraciones */
+.enum-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(245,230,200,0.15);
+  border-radius: 10px;
+}
+
+.enum-item { font-size: 0.78rem; color: var(--crema-dark); }
+.enum-item strong { color: var(--crema); display: block; margin-bottom: 0.2rem; font-size: 0.8rem; }

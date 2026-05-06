@@ -1,0 +1,330 @@
+/* ─── VARIEDADES SECTION ─── */
+.variedades-section { background: var(--blanco); }
+
+.variedades-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.variedades-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.variedad-card {
+  border: 1px solid var(--crema-dark);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  background: white;
+}
+
+.variedad-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(59, 26, 8, 0.12);
+}
+
+.variedad-banner {
+  height: 200px;
+  display: flex;
+  align-items: flex-end;
+  padding: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.variedad-imagen {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.variedad-banner::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
+  z-index: 1;
+}
+
+.variedad-nombre {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  color: white;
+  font-weight: 700;
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  padding: 1rem;
+}
+
+.variedad-body { padding: 1.25rem; }
+
+.variedad-desc {
+  font-size: 0.875rem;
+  color: var(--texto-mid);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.variedad-meta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+}
+
+.meta-item { display: flex; flex-direction: column; gap: 0.1rem; }
+.meta-label { color: #999; font-size: 0.7rem; letter-spacing: 0.05em; text-transform: uppercase; }
+.meta-value { color: var(--cafe); font-weight: 600; }
+
+.sabores {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--crema);
+}
+
+.sabor-pill {
+  background: var(--crema);
+  color: var(--cafe-mid);
+  border-radius: 999px;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 999;
+  padding: 1.5rem;
+}
+
+.modal-overlay.active {
+  display: flex;
+}
+
+.modal-window {
+  width: min(700px, 100%);
+  background: #fff;
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.18);
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 50%;
+  background: #d32f2f;
+  color: white;
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.modal-header {
+  margin-bottom: 1.5rem;
+}
+
+.modal-header h2 {
+  margin: 0 0 0.5rem;
+  font-size: 2rem;
+  color: #5c2a00;
+}
+
+.modal-header p {
+  margin: 0;
+  color: #4f4f4f;
+  line-height: 1.7;
+}
+
+.modal-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.modal-card {
+  background: #fff4e6;
+  border-radius: 16px;
+  padding: 1rem;
+  border: 1px solid #f1d2b7;
+}
+
+.modal-label {
+  margin: 0 0 0.4rem;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #a46200;
+}
+
+.modal-value {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #3c1f00;
+  font-weight: 600;
+}
+
+.modal-flavors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.modal-flavor-pill {
+  background: #ffefcd;
+  color: #7f4b00;
+  border-radius: 999px;
+  padding: 0.55rem 0.85rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* Banner colors per variety */
+.banner-caturra  { background: linear-gradient(135deg, #8B4513, #D2691E); }
+.banner-castillo { background: linear-gradient(135deg, #5D4037, #A1887F); }
+.banner-tipica   { background: linear-gradient(135deg, #4E342E, #8D6E63); }
+.banner-bourbon  { background: linear-gradient(135deg, #3E2723, #6D4C41); }
+.banner-geisha   { background: linear-gradient(135deg, #1B5E20, #558B2F); }
+
+/* ─── REGIONES SECTION ─── */
+.regiones-section {
+  background: var(--cafe);
+  color: var(--crema);
+}
+
+.regiones-section .section-tag  { color: var(--crema-dark); }
+.regiones-section .section-title { color: var(--crema); }
+.regiones-section .section-lead  { color: var(--crema-dark); }
+
+.regiones-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.region-card {
+  border: 1px solid rgba(245, 230, 200, 0.2);
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: background 0.3s, border-color 0.3s, transform 0.3s ease;
+}
+
+.region-card:hover {
+  background: rgba(245, 230, 200, 0.08);
+  border-color: rgba(245, 230, 200, 0.4);
+  transform: translateY(-4px);
+}
+
+.region-numero {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--crema-dark);
+  opacity: 0.4;
+  line-height: 1;
+  margin-bottom: 0.75rem;
+}
+
+.region-nombre {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  color: var(--crema);
+  margin-bottom: 0.5rem;
+}
+
+.region-desc {
+  font-size: 0.82rem;
+  color: var(--crema-dark);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.region-stat {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.78rem;
+  color: var(--crema-dark);
+  opacity: 0.8;
+}
+
+.region-stat strong { color: var(--crema); }
+
+/* Region banner styles */
+.region-banner {
+  height: 150px;
+  position: relative;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.region-imagen {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.region-banner::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
+  z-index: 1;
+}
+
+.region-numero {
+  position: absolute;
+  top: 0.5rem;
+  left: 1rem;
+  z-index: 2;
+  color: white;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  opacity: 1;
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+.region-nombre {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 1rem;
+  z-index: 2;
+  color: white;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  margin-bottom: 0;
+}
